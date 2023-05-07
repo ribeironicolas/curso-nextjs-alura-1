@@ -7,13 +7,13 @@ import { Box, Text } from '../../theme/components'
 export default function FAQScreen({ faq }) {
   return (
     <Box
-      styleSheet={{
+      stylesheet={{
         backgroundColor: theme.colors.neutral['050'],
       }}
     >
       <Box
         as='main'
-        styleSheet={{
+        stylesheet={{
           flex: 1,
           maxWidth: theme.space.xcontainer_xl,
           marginHorizontal: 'auto',
@@ -29,7 +29,7 @@ export default function FAQScreen({ faq }) {
         }}
       >
         <Box
-          styleSheet={{
+          stylesheet={{
             display: 'grid',
             gridTemplateColumns: {
               lg: 'repeat(3,minmax(0,1fr))',
@@ -42,7 +42,7 @@ export default function FAQScreen({ faq }) {
           <Box>
             <Text
               as='h2'
-              styleSheet={{
+              stylesheet={{
                 textVariant: theme.typography.variants.heading2,
                 color: theme.colors.neutral[900],
               }}
@@ -51,7 +51,7 @@ export default function FAQScreen({ faq }) {
             </Text>
             <Text
               as='p'
-              styleSheet={{
+              stylesheet={{
                 marginTop: theme.space.x4,
                 textVariant: theme.typography.variants.body1,
                 color: theme.colors.neutral[500],
@@ -61,7 +61,7 @@ export default function FAQScreen({ faq }) {
               com nosso{' '}
               <Link
                 href='mailto:contato@alura.com.br'
-                styleSheet={{
+                stylesheet={{
                   color: theme.colors.primary[400],
                   hover: {
                     color: theme.colors.primary[300],
@@ -74,7 +74,7 @@ export default function FAQScreen({ faq }) {
 
             <Text
               as='p'
-              styleSheet={{
+              stylesheet={{
                 marginTop: theme.space.x4,
                 textVariant: theme.typography.variants.body1,
                 color: theme.colors.neutral[500],
@@ -82,7 +82,7 @@ export default function FAQScreen({ faq }) {
             >
               <Link
                 href='/'
-                styleSheet={{
+                stylesheet={{
                   color: theme.colors.primary[400],
                   fontWeight: '500',
                   hover: {
@@ -95,7 +95,7 @@ export default function FAQScreen({ faq }) {
             </Text>
           </Box>
           <Box
-            styleSheet={{
+            stylesheet={{
               marginTop: {
                 xs: theme.space.x12,
                 lg: theme.space.x0,
@@ -107,7 +107,7 @@ export default function FAQScreen({ faq }) {
           >
             {faq.length === 0 && (
               <Box
-                styleSheet={{
+                stylesheet={{
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'center',
@@ -131,7 +131,7 @@ export default function FAQScreen({ faq }) {
               >
                 <Text
                   as='h1'
-                  styleSheet={{
+                  stylesheet={{
                     textVariant: theme.typography.variants.heading1,
                   }}
                 >
@@ -139,7 +139,7 @@ export default function FAQScreen({ faq }) {
                 </Text>
                 <Text
                   as='p'
-                  styleSheet={{
+                  stylesheet={{
                     marginTop: theme.space.x1,
                     textVariant: theme.typography.variants.body1,
                     color: theme.colors.neutral[500],
@@ -153,13 +153,13 @@ export default function FAQScreen({ faq }) {
               {faq.map((faq) => (
                 <Box
                   key={faq.question}
-                  styleSheet={{
+                  stylesheet={{
                     marginBottom: theme.space.x12,
                   }}
                 >
                   <Text
                     as='dt'
-                    styleSheet={{
+                    stylesheet={{
                       textVariant: theme.typography.variants.heading4,
                       color: theme.colors.neutral[900],
                     }}
@@ -168,7 +168,7 @@ export default function FAQScreen({ faq }) {
                   </Text>
                   <Text
                     as='dd'
-                    styleSheet={{
+                    stylesheet={{
                       marginTop: theme.space.x2,
                       textVariant: theme.typography.variants.body1,
                       color: theme.colors.neutral[500],

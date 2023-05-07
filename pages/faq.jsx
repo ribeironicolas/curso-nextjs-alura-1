@@ -1,4 +1,5 @@
 // faq.js
+import axios from 'axios'
 import FAQScreen from '../src/screens/FAQScreen'
 
 export default FAQScreen
